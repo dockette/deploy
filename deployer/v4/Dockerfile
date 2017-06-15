@@ -3,6 +3,7 @@ FROM dockette/php71
 MAINTAINER Milan Sulc <sulcmil@gmail.com>
 
 ENV DEPLOYER_VERSION=4.3.0
+ENV DEPLOYER_BIN=/usr/local/bin/dep
 
 # INSTALLATION
 RUN apt update && apt dist-upgrade -y && \
@@ -10,7 +11,8 @@ RUN apt update && apt dist-upgrade -y && \
     apt install -y wget curl && \
     # DEPLOYER #################################################################
     curl -LO https://deployer.org/releases/v${DEPLOYER_VERSION}/deployer.phar && \
-    mv deployer.phar /usr/local/bin/dep && \
+    mv deployer.phar ${DEPLOYER_BIN} && \
+    chmod +x ${DEPLOYER_BIN} && \
     # CLEAN UP #################################################################
     apt-get clean -y && \
     apt-get autoclean -y && \
