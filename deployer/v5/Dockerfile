@@ -8,7 +8,7 @@ ENV DEPLOYER_BIN=/usr/local/bin/dep
 # INSTALLATION
 RUN apt update && apt dist-upgrade -y && \
     # DEPENDENCIES #############################################################
-    apt install -y wget curl git openssh && \
+    apt install -y wget curl git openssh-client && \
     # DEPLOYER #################################################################
     curl -LO https://deployer.org/releases/v${DEPLOYER_VERSION}/deployer.phar && \
     mv deployer.phar ${DEPLOYER_BIN} && \
