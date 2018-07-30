@@ -2,7 +2,7 @@ FROM dockette/php71
 
 MAINTAINER Milan Sulc <sulcmil@gmail.com>
 
-ENV DEPLOYER_VERSION=4.3.2
+ENV DEPLOYER_VERSION=6.2.0
 ENV DEPLOYER_BIN=/usr/local/bin/dep
 
 # INSTALLATION

@@ -8,14 +8,20 @@
 > Deployer — Deployment tool for PHP
 > https://deployer.org/
 
-### v4
+### v6
 
 ```
-docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer4
+docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer6
 ```
 
 ### v5
 
 ```
 docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer5
+```
+
+### v4
+
+```
+docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer4
 ```
