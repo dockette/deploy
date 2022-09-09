@@ -1,6 +1,8 @@
 FROM dockette/php:7.4
 
-ENV DEPLOYER_VERSION=6.7.3
+LABEL maintainer="sulcmil@gmail.com"
+
+ENV DEPLOYER_VERSION=6.9.0
 ENV DEPLOYER_BIN=/usr/local/bin/dep
 
 # INSTALLATION

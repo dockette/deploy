@@ -1,5 +1,7 @@
 FROM dockette/php:7.3
 
+LABEL maintainer="sulcmil@gmail.com"
+
 ENV DEPLOYER_VERSION=5.1.3
 ENV DEPLOYER_BIN=/usr/local/bin/dep
 
