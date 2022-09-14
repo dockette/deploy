@@ -2,7 +2,7 @@ FROM dockette/php:8.1
 
 LABEL maintainer="sulcmil@gmail.com"
 
-ENV DEPLOYER_VERSION=7.0.1
+ENV DEPLOYER_VERSION=7.0.2
 ENV DEPLOYER_BIN=/usr/local/bin/dep
 
 # INSTALLATION
@@ -10,7 +10,7 @@ RUN apt update && apt dist-upgrade -y && \
     # DEPENDENCIES #############################################################
     apt install -y wget curl git openssh-client && \
     # DEPLOYER #################################################################
-    curl -LO https://deployer.org/releases/v${DEPLOYER_VERSION}/deployer.phar && \
+    curl -LO https://github.com/deployphp/deployer/releases/download/v${DEPLOYER_VERSION}/deployer.phar && \
     mv deployer.phar ${DEPLOYER_BIN} && \
     chmod +x ${DEPLOYER_BIN} && \
     # CLEAN UP #################################################################
