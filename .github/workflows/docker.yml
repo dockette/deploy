@@ -25,3 +25,5 @@ jobs:
             context: "deployer/v7"
           - tag: "deployer6"
             context: "deployer/v6"
+
+      fail-fast: false
