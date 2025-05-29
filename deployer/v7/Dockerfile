@@ -8,7 +8,7 @@ ENV DEPLOYER_BIN=/usr/local/bin/dep
 # INSTALLATION
 RUN apt update && apt dist-upgrade -y && \
     # DEPENDENCIES #############################################################
-    apt install -y wget curl git openssh-client && \
+    apt install -y wget curl git openssh-client rsync && \
     # DEPLOYER #################################################################
     curl -LO https://github.com/deployphp/deployer/releases/download/v${DEPLOYER_VERSION}/deployer.phar && \
     mv deployer.phar ${DEPLOYER_BIN} && \
