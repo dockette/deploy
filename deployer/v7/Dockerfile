@@ -1,4 +1,4 @@
-FROM dockette/php:8.2
+FROM dockette/php:8.3
 
 LABEL maintainer="sulcmil@gmail.com"
 
