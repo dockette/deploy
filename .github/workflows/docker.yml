@@ -21,6 +21,8 @@ jobs:
     strategy:
       matrix:
         include:
+          - tag: "deployer8"
+            context: "deployer/v8"
           - tag: "deployer7"
             context: "deployer/v7"
           - tag: "deployer6"
