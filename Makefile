@@ -16,3 +16,7 @@ build-deployer6:
 .PHONY: build-deployer7
 build-deployer7: 
 	VERSION=deployer7 CONTEXT=deployer/v7 $(MAKE) _docker-build
+
+.PHONY: build-deployer8
+build-deployer8: 
+	VERSION=deployer8 CONTEXT=deployer/v8 $(MAKE) _docker-build
