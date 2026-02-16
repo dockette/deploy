@@ -2,7 +2,7 @@ FROM dockette/php:8.4
 
 LABEL maintainer="sulcmil@gmail.com"
 
-ENV DEPLOYER_VERSION=8.0.0-alpha.2
+ENV DEPLOYER_VERSION=8.0.0-beta
 ENV DEPLOYER_BIN=/usr/local/bin/dep
 
 # INSTALLATION
