@@ -1,7 +1,11 @@
-# Deploy / Deployment Tools
+<h1 align=center>Dockette / Deploy</h1>
 
-[![Docker Stars](https://img.shields.io/docker/stars/dockette/deploy.svg?style=flat)](https://hub.docker.com/r/dockette/deploy/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/dockette/deploy.svg?style=flat)](https://hub.docker.com/r/dockette/deploy/)
+<p align=center>
+   <a href="https://github.com/dockette/deploy/actions"><img src="https://github.com/dockette/deploy/actions/workflows/docker.yml/badge.svg" alt="GitHub Actions"></a>
+   <a href="https://hub.docker.com/r/dockette/deploy"><img src="https://img.shields.io/docker/pulls/dockette/deploy.svg" alt="Docker Hub pulls"></a>
+   <a href="https://github.com/sponsors/f3l1x"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa" alt="GitHub Sponsors"></a>
+   <a href="https://github.com/orgs/dockette/discussions"><img src="https://img.shields.io/badge/support-discussions-6f42c1" alt="Support/Discussions"></a>
+</p>
 
 ## Deployer
 
@@ -10,14 +14,14 @@
 
 | Version | Image |
 |---------|-------|
+| 8.x.x   | dockette/deploy:deployer8 |
 | 7.x.x   | dockette/deploy:deployer7 |
 | 6.x.x   | dockette/deploy:deployer6 |
-| 5.x.x   | dockette/deploy:deployer5 |
-| 4.x.x   | dockette/deploy:deployer4 |
 
 How to use it? Mount your app or just the deploy config.
 
 ```
+docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer8
 docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer7
 docker run -it --rm -v $(pwd)/deploy.php:/srv dockette/deploy:deployer6
 ```
